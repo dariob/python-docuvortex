@@ -8,7 +8,7 @@ def initialize_page():
     st.set_page_config(page_title='DocuVortex', page_icon=':books:')
     st.image(logo_image, width=500)
     st.header("ChatCCNL")
-    st.markdown("[Cifa Italia](https://www.cifaitalia.it/cifa-cosa-facciamo/ccnl.html)")
+    st.markdown("[Scarica i CCNL dal sito di Cifa Italia](https://www.cifaitalia.it/cifa-cosa-facciamo/ccnl.html)")
 
 
 def handle_query_form():
