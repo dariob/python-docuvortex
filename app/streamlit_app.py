@@ -6,16 +6,16 @@ from query.vortex_query import VortexQuery
 
 def initialize_page():
     st.set_page_config(page_title='DocuVortex', page_icon=':books:')
-    st.image(logo_image, width=80)
-    st.header("NeonShield DocuVortex")
-    st.markdown("[Github](https://github.com/pkalkman/python-docuvortex)")
+    st.image(logo_image, width=500)
+    st.header("ChatCCNL")
+    st.markdown("[Cifa Italia](https://www.cifaitalia.it/cifa-cosa-facciamo/ccnl.html)")
 
 
 def handle_query_form():
     with st.form(key='query_form'):
-        user_query = st.text_input('Search for: ', '', key='input',
-                                   help='Enter your search query?')
-        submit_button = st.form_submit_button('Submit')
+        user_query = st.text_input('Domanda: ', '', key='input',
+                                   help='Chiedimi informazioni sui CCNL di CIFA Italia?')
+        submit_button = st.form_submit_button('Invia')
     return user_query, submit_button
 
 
