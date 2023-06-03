@@ -5,7 +5,7 @@ from query.vortex_query import VortexQuery
 
 
 def initialize_page():
-    st.set_page_config(page_title='DocuVortex', page_icon=':books:')
+    st.set_page_config(page_title='ChatCCNL', page_icon=':books:')
     st.image(logo_image, width=500)
     st.header("ChatCCNL")
     st.markdown("[Scarica i CCNL dal sito di Cifa Italia](https://www.cifaitalia.it/cifa-cosa-facciamo/ccnl.html)")
@@ -37,7 +37,7 @@ def query(question: str) -> str:
     return answer
 
 
-logo_image = Image.open('./logo.png')
+logo_image = Image.open('logo.png')
 
 # Initialize page and session state
 st.session_state.setdefault('generated', [])
